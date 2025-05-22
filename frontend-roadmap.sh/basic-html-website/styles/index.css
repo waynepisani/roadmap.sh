@@ -1,0 +1,243 @@
+* {
+  box-sizing: border-box;
+  font-family: "Overpass";
+  background-color: lightgray;
+}
+
+.logo {
+  margin: 1rem;
+}
+
+.logo span {
+  font-size: 2rem;
+  font-family: "Merriweather", arial;
+  border: 2px solid darkgrey;
+  padding: 0 0.25rem;
+  border-radius: 0.5rem;
+  background-color: darkslategray;
+  color: darkgray;
+  text-shadow: 1px 1px black;
+  box-shadow: 1px 1px black;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-family: "Merriweather";
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: darkslategray;
+  text-shadow: 1px 1px black;
+}
+
+h2 {
+  padding-left: 1rem;
+}
+
+h3 {
+  margin-top: 0;
+  font-family: "Merriweather";
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+header ul {
+  display: flex;
+}
+
+header li a{
+  padding: 0.25rem 0.25rem;
+  margin: 0 0.25rem;
+  border: 2px solid darkgrey;
+  border-radius: 0.25rem;
+  background-color: darkslategrey;
+  color: darkgrey;
+  font-family: "Overpass", sans-serif;
+  text-shadow: 1px 1px black;
+  box-shadow: 1px 1px black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.intro {
+  padding: 4rem 0;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+    text-align: center;
+}
+
+.intro p {
+  color: grey;
+}
+
+.projects,
+.experience,
+.education {
+  border-bottom: 1px solid black;
+  min-height: 200px;
+}
+
+.experience {
+  border-inline: 1px solid black;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}
+
+.experience article {
+  padding: 1rem;
+}
+
+.projects li {
+  padding: 1rem 0.5rem;
+}
+
+.projects li:not(:last-child) {
+  border-bottom: 1px solid black;
+}
+
+.projects ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+.projects li {
+  padding: 1rem;
+}
+
+.experience article:not(:last-child) {
+  border-bottom: 1px solid black;
+}
+.education p {
+  padding: 1rem 0 0 1rem;
+  margin: 0;
+}
+
+.education li {
+  padding: 0 1rem;
+  list-style-type: disc;
+}
+
+blockquote {
+  border: 2px solid darkslategrey;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 1px 1px black;
+}
+
+blockquote,
+blockquote p,
+blockquote footer {
+  background-color: white;
+}
+
+.reviews-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.articles ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+.articles li {
+  border-bottom: 1px solid black;
+  padding-left: 1rem;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+}
+
+#name,
+#email,
+#message,
+button {
+  margin-bottom: 1rem;
+  border: 2px solid darkslategrey;
+  border-radius: 0.25rem;
+  box-shadow: 1px 1px black;
+}
+
+.reviews footer {
+  padding: 1rem;
+  color: darkgrey;
+  text-shadow: 1px 1px black;
+}
+
+body > footer {
+  text-align: center;
+  max-height: 35px;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .grid-container,
+  .reviews-container {
+    grid-template-columns: 1fr;
+  }
+
+  .projects li:first-child,
+  .experience article:not(:last-child){
+    border-top: 1px solid black;
+  }
+
+  .experience {
+    border-inline: none;
+  }
+
+  .intro {
+    padding: 1rem;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul {
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+  }
+
+  header li a {
+    display: inline-block;
+  }
+  
+  .logo {
+    padding-top: 1rem;
+  }
+}

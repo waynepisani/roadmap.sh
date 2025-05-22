@@ -8,14 +8,22 @@
         <meta name="description" content="Contact form for a basic HTML-only website for roadmap.sh frontend project" />
         <meta name="keywords" content="HTML, Frontend, Contact" />
         <meta name="author" content="Wayne Pisani" />
+        <!--CSS-->
+        <link rel="stylesheet" href="styles/index.css" />
+        <!--Overpass Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!--Merriweather Font-->
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+
     </head>
 
     <body>
         <header>
             <div class="logo">
-                <img src="" alt="Logo" />
+                <span>W</span>
             </div>
-            <p>Wayne Pisani</p>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -29,18 +37,20 @@
         <main>
             <section class="contact">
                 <h1>Contact Me</h1>
-                <form action="submit_form.php" method="POST">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required />
+                <div class="form-wrapper">
+                    <form action="submit_form.php" method="POST">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required />
 
-                    <label for="email">Email:</label>
-                    <input type="text" id="email" name="email" required />
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" required />
 
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
 
-                    <button type="submit">Send Message</button>
-                </form>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
             </section>
         </main>
 
